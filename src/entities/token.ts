@@ -84,11 +84,11 @@ export const WETH = {
   ),
   [ChainId.MAINNET]: new Token(
     ChainId.MAINNET,
-    '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c',
+    '0x4200000000000000000000000000000000000006',
     18,
-    'WBNB',
-    'Wrapped BNB',
-    'https://www.binance.org'
+    'WETH',
+    'Wrapped ETH',
+    'https://www.basescan.org'
   ),
   [ChainId.TESTNET]: new Token(
     ChainId.TESTNET,

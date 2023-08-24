@@ -3,7 +3,7 @@ export declare type BigintIsh = JSBI | number | string;
 export declare enum ChainId {
     ETH = 1,
     MUMBAI = 80001,
-    MAINNET = 56,
+    MAINNET = 8453,
     TESTNET = 97
 }
 export declare enum TradeType {
@@ -15,16 +15,16 @@ export declare enum Rounding {
     ROUND_HALF_UP = 1,
     ROUND_UP = 2
 }
-export declare const FACTORY_ADDRESS = "0xe8c08E062ADb7b07B89D8Fb543dE4424B15F14FF";
+export declare const FACTORY_ADDRESS = "0x55b3409335B81E7A8B7C085Bbb4047DDc23f7257";
 export declare const FACTORY_ADDRESS_MAP: {
-    56: string;
+    8453: string;
     97: string;
     1: string;
     80001: string;
 };
-export declare const INIT_CODE_HASH = "0x0774d52e64195f689e3cbaafd0130eb55a222cb7218ba9dfbbb5b949820ac60b";
+export declare const INIT_CODE_HASH = "0x64607b9f5010cb84cb06f6f736569f3683fb93582f6b5c32ca2858222856e1ec";
 export declare const INIT_CODE_HASH_MAP: {
-    56: string;
+    8453: string;
     97: string;
     1: string;
     80001: string;

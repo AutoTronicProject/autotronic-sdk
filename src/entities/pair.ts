@@ -34,10 +34,6 @@ export class Pair {
 
     const key = composeKey(token0, token1)
 
-    console.log(token0)
-    console.log(token1)
-    console.log("Token Info")
-
     if (PAIR_ADDRESS_CACHE?.[key] === undefined) {
       PAIR_ADDRESS_CACHE = {
         ...PAIR_ADDRESS_CACHE,

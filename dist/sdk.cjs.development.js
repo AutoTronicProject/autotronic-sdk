@@ -21,7 +21,7 @@ var _FACTORY_ADDRESS_MAP, _INIT_CODE_HASH_MAP, _SOLIDITY_TYPE_MAXIMA;
 (function (ChainId) {
   ChainId[ChainId["ETH"] = 1] = "ETH";
   ChainId[ChainId["MUMBAI"] = 80001] = "MUMBAI";
-  ChainId[ChainId["MAINNET"] = 56] = "MAINNET";
+  ChainId[ChainId["MAINNET"] = 8453] = "MAINNET";
   ChainId[ChainId["TESTNET"] = 97] = "TESTNET";
 })(exports.ChainId || (exports.ChainId = {}));
 
@@ -36,9 +36,9 @@ var _FACTORY_ADDRESS_MAP, _INIT_CODE_HASH_MAP, _SOLIDITY_TYPE_MAXIMA;
   Rounding[Rounding["ROUND_UP"] = 2] = "ROUND_UP";
 })(exports.Rounding || (exports.Rounding = {}));
 
-var FACTORY_ADDRESS = '0xe8c08E062ADb7b07B89D8Fb543dE4424B15F14FF';
+var FACTORY_ADDRESS = '0x55b3409335B81E7A8B7C085Bbb4047DDc23f7257';
 var FACTORY_ADDRESS_MAP = (_FACTORY_ADDRESS_MAP = {}, _FACTORY_ADDRESS_MAP[exports.ChainId.MAINNET] = FACTORY_ADDRESS, _FACTORY_ADDRESS_MAP[exports.ChainId.TESTNET] = '0xe8c08E062ADb7b07B89D8Fb543dE4424B15F14FF', _FACTORY_ADDRESS_MAP[exports.ChainId.ETH] = '', _FACTORY_ADDRESS_MAP[exports.ChainId.MUMBAI] = '0xe8c08E062ADb7b07B89D8Fb543dE4424B15F14FF', _FACTORY_ADDRESS_MAP);
-var INIT_CODE_HASH = '0x0774d52e64195f689e3cbaafd0130eb55a222cb7218ba9dfbbb5b949820ac60b';
+var INIT_CODE_HASH = '0x64607b9f5010cb84cb06f6f736569f3683fb93582f6b5c32ca2858222856e1ec';
 var INIT_CODE_HASH_MAP = (_INIT_CODE_HASH_MAP = {}, _INIT_CODE_HASH_MAP[exports.ChainId.MAINNET] = INIT_CODE_HASH, _INIT_CODE_HASH_MAP[exports.ChainId.TESTNET] = '0x0774d52e64195f689e3cbaafd0130eb55a222cb7218ba9dfbbb5b949820ac60b', _INIT_CODE_HASH_MAP[exports.ChainId.ETH] = '', _INIT_CODE_HASH_MAP[exports.ChainId.MUMBAI] = '0x0774d52e64195f689e3cbaafd0130eb55a222cb7218ba9dfbbb5b949820ac60b', _INIT_CODE_HASH_MAP);
 var MINIMUM_LIQUIDITY = /*#__PURE__*/JSBI.BigInt(1000); // exports for internal consumption
 
@@ -789,9 +789,6 @@ var Pair = /*#__PURE__*/function () {
 
 
     var key = composeKey(token0, token1);
-    console.log(token0);
-    console.log(token1);
-    console.log("Token Info");
 
     if (((_PAIR_ADDRESS_CACHE = PAIR_ADDRESS_CACHE) === null || _PAIR_ADDRESS_CACHE === void 0 ? void 0 : _PAIR_ADDRESS_CACHE[key]) === undefined) {
       var _extends2;
